@@ -40,6 +40,10 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 2',
     'Programming Language :: Python :: 2.6',
     'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3.3',
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
     'Topic :: Internet',
     'Topic :: Utilities',
     'Topic :: Software Development :: Libraries :: Python Modules']
@@ -54,18 +58,18 @@ except Exception:
     long_description = description
 
 setup(name='goose-extractor',
-    version=version.__version__,
-    description=description,
-    long_description=long_description,
-    keywords='scrapping, extractor, web scrapping',
-    classifiers=CLASSIFIERS,
-    author='Xavier Grangier',
-    author_email='grangier@gmail.com',
-    url='https://github.com/grangier/python-goose',
-    license='Apache',
-    packages=find_packages(),
-    include_package_data=True,
-    zip_safe=False,
-    install_requires=['Pillow', 'lxml', 'cssselect', 'jieba', 'beautifulsoup', 'nltk'],
-    test_suite="tests"
-)
+      version=version.__version__,
+      description=description,
+      long_description=long_description,
+      keywords='scrapping, extractor, web scrapping',
+      classifiers=CLASSIFIERS,
+      author='Xavier Grangier',
+      author_email='yangkf1985@gmail.com',
+      url='https://github.com/yangkf1985/python-goose.git',
+      license='Apache',
+      packages=find_packages(),
+      include_package_data=True,
+      zip_safe=False,
+      install_requires=['Pillow', 'lxml', 'cssselect', 'jieba', 'beautifulsoup4', 'nltk'],
+      test_suite="tests"
+      )
